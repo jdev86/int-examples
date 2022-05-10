@@ -1,16 +1,34 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './index.css'
 
+import data from "./data.json";
+
 export default function Tree() {
+    // Renders Data in a Tree List
+    const TreeData = ({data}) => {
+        return (
+            <>
+                <span>{data.name}</span> <br/>
+                {/* Using recursion to iterate through and render child nodes */}
+                {
+                    data.sub && data.sub.map(child => {
+                        return (
+                            // Calls parent function to render child node
+                            <div key={child.name}>
+                                <TreeData data={child} />
+                            </div>
+                        )
+                    })
+                }
+            </>
+        )
+    }
+
     return (
         <div className="tree">
-            <span>mammals</span><br />
-            <span>     cheetah</span><br />
-            <span>     bear</span><br />
-            <span>          lion</span><br />
-            <span>          dog</span><br />
-            <span>               elephant</span><br />
-            <span>     ape</span><br />
+            {
+                <TreeData data={data} />
+            }
         </div>
     )
 }

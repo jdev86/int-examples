@@ -1,1 +1,20 @@
-{}
+{
+    "name": "mammals",
+    "parent": null,
+    "sub": [
+        {"name": "     cheetah", "parent": "mammals"},
+        {"name": "     bear",
+            "parent": "mammals",
+            "sub": [
+                {"name": "          lion", "parent": "bear"},
+                {"name": "          dog",
+                    "parent": "bear",
+                    "sub": [
+                        {"name": "               elephant", "parent": "dog"}
+                    ]
+                }
+            ]
+        },
+        {"name": "     ape"}
+    ]
+}
