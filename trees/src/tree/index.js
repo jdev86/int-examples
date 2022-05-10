@@ -3,14 +3,14 @@ import './index.css'
 
 export default function Tree() {
     return (
-            <div className="tree">
-                mammals<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cheetah <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bear <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lion <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dog <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elephant <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ape <br/>
-            </div>
+        <div className="tree">
+            <span>mammals</span><br />
+            <span>     cheetah</span><br />
+            <span>     bear</span><br />
+            <span>          lion</span><br />
+            <span>          dog</span><br />
+            <span>               elephant</span><br />
+            <span>     ape</span><br />
+        </div>
     )
 }

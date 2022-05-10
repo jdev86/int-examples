@@ -2,5 +2,6 @@
     background-color: #efefef;
     height: 100%;
     padding: 10px;
-    font-family: monospace
+    font-family: monospace;
+    white-space: pre-wrap; 
 }
