@@ -5,3 +5,11 @@
     font-family: monospace;
     white-space: pre-wrap; 
 }
+
+.nodeInput {
+    margin-left: 1rem;
+}
+
+.nodeName {
+    display: inline-flex;
+}

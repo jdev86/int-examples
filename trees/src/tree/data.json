@@ -2,19 +2,19 @@
     "name": "mammals",
     "parent": null,
     "sub": [
-        {"name": "     cheetah", "parent": "mammals"},
+        {"name": "     cheetah", "parent": "mammals", "sub": []},
         {"name": "     bear",
             "parent": "mammals",
             "sub": [
-                {"name": "          lion", "parent": "bear"},
+                {"name": "          lion", "parent": "     bear", "sub": []},
                 {"name": "          dog",
-                    "parent": "bear",
+                    "parent": "     bear",
                     "sub": [
-                        {"name": "               elephant", "parent": "dog"}
+                        {"name": "               elephant", "parent": "          dog", "sub": []}
                     ]
                 }
             ]
         },
-        {"name": "     ape"}
+        {"name": "     ape", "sub": []}
     ]
 }
